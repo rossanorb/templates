@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pop Up</title>
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>
+                Risus gravida nunc, sem auctor praesent ad dictumst dictumst varius tincidunt magna. Sociosqu euismod vehicula nec aenean cum massa, id justo. Class eu viverra egestas nullam praesent tempor penatibus. Donec eu consequat sed porttitor nullam pellentesque. Aptent quam turpis ut euismod urna facilisi primis proin litora fusce eu inceptos. Nulla lobortis viverra dui dictumst varius venenatis imperdiet tempor odio vehicula? Tempus tempus mi, interdum.
+            </h2>
+            <img src="BG.jpg" style="width: 100%;" alt="">
+            <a href="#" onclick="toggle()">Read More</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>Phasellus et leo ac arcu ridiculus</h2>
+        <p>lorem blandit rhoncus nascetur auctor nec mollis. Vivamus torquent cursus aptent natoque porta lectus euismod lorem. Magna quisque mi sed cursus commodo, interdum pellentesque commodo ligula litora sed platea. Et id habitant rutrum sed pellentesque varius consequat fames duis. Platea lectus posuere pulvinar. Blandit luctus, dictumst feugiat lorem. Ultricies ultrices aliquet felis commodo facilisis. Etiam vestibulum platea vehicula diam vivamus non dictum luctus viverra curabitur purus metus. Class </p>
+        <a href="#" onclick="toggle()">close</a>
+    </div>
+    <script type="text/javascript">
+    function toggle(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>
